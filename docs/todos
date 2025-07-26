@@ -1,0 +1,5 @@
+ナビゲーションリンク（About, Tags, Contactなど）をヘッダーに追加
+
+メタ情報（description, faviconなど）を <Head> に追加
+
+next/head の title をページごとに差し替え可能にする（titleをpropsとして渡す）
