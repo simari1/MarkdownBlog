@@ -2,6 +2,7 @@
 import type { UploadedImage } from "@/pages/admin";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Image from "next/image";
 
 type UploadedImagesProps = {
   uploadedImages: UploadedImage[];
@@ -22,9 +23,11 @@ export default function UploadedImages({
             key={index}
             className="flex flex-row items-stretch gap-4 bg-gray-800 p-4 rounded mb-4 text-white"
           >
-            <img
+            <Image
               src={img.url}
-              alt={img.alt}
+              alt={img.alt || ""}
+              width={128}
+              height={40}
               className="w-32 h-10 object-cover rounded flex-shrink-0"
             />
             <p className="text-sm font-mono bg-gray-900 text-white p-2 rounded border border-gray-700 flex-1 flex items-center">
@@ -33,7 +36,7 @@ export default function UploadedImages({
             <button
               onClick={async () => {
                 await navigator.clipboard.writeText(
-                  generateMarkdownImage(img.url, img.alt)
+                  generateMarkdownImage(img.url, img.alt),
                 );
                 toast.success("Copied to clipboard", {
                   position: "bottom-center",

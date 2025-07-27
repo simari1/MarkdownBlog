@@ -8,8 +8,6 @@ type UploadButtonProps = {
 };
 
 export const UploadButton = ({ setUploadedImages }: UploadButtonProps) => {
-  const handleUploadSuccess = (url: string, alt?: string) => {};
-
   return (
     <CldUploadWidget
       signatureEndpoint="/api/sign-cloudinary"
@@ -19,7 +17,7 @@ export const UploadButton = ({ setUploadedImages }: UploadButtonProps) => {
         multiple: false,
       }}
       onOpen={() => {
-        console.log("Upload widget opened");
+        // Upload widget opened
       }}
       onSuccess={(result) => {
         if (
@@ -38,12 +36,11 @@ export const UploadButton = ({ setUploadedImages }: UploadButtonProps) => {
             { url: secureUrl, alt: altText },
           ]);
         } else {
-          console.log("Failed to extract secure URL from result");
-          console.log("Result structure:", JSON.stringify(result, null, 2));
+          // Failed to extract secure URL from result
         }
       }}
-      onError={(error) => {
-        console.log("Upload error:", error);
+      onError={(_error) => {
+        // Upload error occurred
       }}
     >
       {({ open }) => (

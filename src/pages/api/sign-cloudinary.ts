@@ -6,7 +6,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   const timestamp = Math.floor(Date.now() / 1000);
   const folder = "blog-assets";
-  const upload_preset = "ml_default";
 
   const paramsToSign = {
     timestamp,
@@ -16,7 +15,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   const signature = cloudinary.utils.api_sign_request(
     paramsToSign,
-    cloudinary.config().api_secret!
+    cloudinary.config().api_secret!,
   );
 
   res.json({

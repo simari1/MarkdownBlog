@@ -25,5 +25,5 @@
 
 🔖 Git まわり
 
-- .gitignore に node_modules, .next, .DS_Store, \*.log, などが含まれてるか
+- .gitignore に node_modules, .next, .DS_Store, \*.log, .env などが含まれてるか
 - .eslintrc, .prettierrc, tailwind.config.ts など設定ファイルが適切に version 管理されているか
