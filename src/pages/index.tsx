@@ -1,7 +1,7 @@
 import { getAllPosts } from "@/lib/posts";
-import Layout from "@/components/Layout";
-import ArticleCard, { Post } from "@/components/ArticleCard";
-import TagFilter from "@/components/TagFilter";
+import Layout from "@/components/layout";
+import ArticleCard, { Post } from "@/components/articlecard";
+import TagFilter from "@/components/tagfilter";
 import { useState } from "react";
 
 export async function getStaticProps() {

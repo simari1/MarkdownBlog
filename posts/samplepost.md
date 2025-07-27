@@ -24,6 +24,12 @@ Markdown は簡潔な記法で文章を記述できるマークアップ言語�
 const variable = () => console.log("hello world");
 ```
 
+- 画像
+  画像は cloudinary に保管します。
+
+  `![lilkkl2e5uw0hnw7ndeq](https://res.cloudinary.com/markdownblogimages/image/upload/v1753625965/blog-assets/lilkkl2e5uw0hnw7ndeq.jpg)`
+  ![lilkkl2e5uw0hnw7ndeq](https://res.cloudinary.com/markdownblogimages/image/upload/v1753625965/blog-assets/lilkkl2e5uw0hnw7ndeq.jpg)
+
 ## Next.js での活用
 
 Next.js では、記事の内容を Markdown 形式で管理し、静的ページとしてビルドすることができます。  

@@ -8,7 +8,7 @@ import rehypeHighlight from "rehype-highlight";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import rehypeSlug from "rehype-slug";
-import Layout from "@/components/Layout";
+import Layout from "@/components/layout";
 
 type Props = {
   title: string;
