@@ -39,7 +39,7 @@ export const UploadButton = ({ setUploadedImages }: UploadButtonProps) => {
           // Failed to extract secure URL from result
         }
       }}
-      onError={(_error) => {
+      onError={() => {
         // Upload error occurred
       }}
     >
