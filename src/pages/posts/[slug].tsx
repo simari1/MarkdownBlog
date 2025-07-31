@@ -18,8 +18,8 @@ type Props = {
 
 export default function Post({ title, date, contentHtml }: Props) {
   return (
-    <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
-      <Layout title={title} description="Markdownで記事を静的生成しています。">
+    <Layout title={title} description="Markdownで記事を静的生成しています。">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
         <header className="mb-6 sm:mb-8 pb-4 sm:pb-6 border-b border-gray-200">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 leading-tight">
             {title}
@@ -30,8 +30,8 @@ export default function Post({ title, date, contentHtml }: Props) {
           className="prose prose-sm sm:prose-base lg:prose-lg max-w-none prose-headings:font-bold prose-p:leading-relaxed prose-ul:leading-relaxed prose-ol:leading-relaxed prose-li:text-gray-300 prose-code:text-gray-300 prose-a:text-blue-400 prose-strong:text-gray-300 text-gray-300 prose-img:mx-auto prose-img:max-w-full prose-img:h-auto"
           dangerouslySetInnerHTML={{ __html: contentHtml }}
         />
-      </Layout>
-    </main>
+      </div>
+    </Layout>
   );
 }
 

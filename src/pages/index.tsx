@@ -21,8 +21,8 @@ export default function Home({ posts }: { posts: Post[] }) {
     : posts;
 
   return (
-    <main className="max-w-4xl mx-auto px-6 py-8 text-gray-100 bg-black">
-      <Layout title="" description="">
+    <Layout title="" description="">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 w-full">
         <h1 className="text-4xl font-bold mb-8 text-center">📚 記事一覧</h1>
 
         {/* タグフィルター */}
@@ -33,12 +33,12 @@ export default function Home({ posts }: { posts: Post[] }) {
         />
 
         {/* 絞り込まれた記事一覧 */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredPosts.map((post) => (
             <ArticleCard key={post.slug} post={post} />
           ))}
         </div>
-      </Layout>
-    </main>
+      </div>
+    </Layout>
   );
 }

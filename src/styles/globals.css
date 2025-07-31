@@ -18,6 +18,7 @@
 @layer base {
   html {
     overflow-x: hidden;
+    overflow-y: scroll;
     box-sizing: border-box;
   }
 

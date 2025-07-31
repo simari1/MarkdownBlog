@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { UploadButton } from "@/components/uploadbutton";
 import UploadedImages from "@/components/uploadedimages";
+import Layout from "@/components/layout";
 
 export type UploadedImage = {
   url: string;
@@ -45,32 +46,36 @@ export default function AdminPage() {
 
   if (!isAuthenticated) {
     return (
-      <div className="p-8">
-        <h1 className="text-2xl font-bold mb-4">画像アップロード</h1>
-        <div className="flex flex-col space-y-4">
-          <input
-            type="password"
-            className="border border-gray-300 rounded-md p-2 text-black w-32"
-            placeholder="パスワード"
-            value={inputPassword}
-            onChange={(e) => setInputPassword(e.target.value)}
-          />
-          <button
-            className="bg-blue-500 text-white px-4 py-2 rounded-md w-32"
-            onClick={handleLogin}
-          >
-            ログイン
-          </button>
+      <Layout title="" description="">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 w-full">
+          <h1 className="text-2xl font-bold mb-4">画像アップロード</h1>
+          <div className="flex flex-col space-y-4">
+            <input
+              type="password"
+              className="border border-gray-300 rounded-md p-2 text-black w-32"
+              placeholder="パスワード"
+              value={inputPassword}
+              onChange={(e) => setInputPassword(e.target.value)}
+            />
+            <button
+              className="bg-blue-500 text-white px-4 py-2 rounded-md w-32"
+              onClick={handleLogin}
+            >
+              ログイン
+            </button>
+          </div>
         </div>
-      </div>
+      </Layout>
     );
   } else {
     return (
-      <div className="p-8">
-        <h1 className="text-2xl font-bold mb-4">画像アップロード</h1>
-        <UploadButton setUploadedImages={setUploadedImages} />
-        <UploadedImages uploadedImages={uploadedImages} />
-      </div>
+      <Layout title="" description="">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 w-full">
+          <h1 className="text-2xl font-bold mb-4">管理者機能</h1>
+          <UploadButton setUploadedImages={setUploadedImages} />
+          <UploadedImages uploadedImages={uploadedImages} />
+        </div>
+      </Layout>
     );
   }
 }
