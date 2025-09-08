@@ -61,7 +61,7 @@ html[data-theme="light"] {
 @layer components {
   /* コンテナのベーススタイル */
   .container {
-    max-width: 65ch;
+    max-width: 56rem; /* 4xl = 896px */
     margin: 0 auto;
     padding: 0 1rem;
   }

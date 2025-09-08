@@ -31,21 +31,21 @@ export default function About() {
             🛠️ システムエンジニアとしてのスキル
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-gray-800 rounded-lg p-6">
+            <div className="rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-3 text-green-400">
                 Frontend
               </h3>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2">
                 <li>• React / Next.js</li>
                 <li>• TypeScript / JavaScript</li>
                 <li>• CSS: Bootstrap, Tailwind CSS</li>
               </ul>
             </div>
-            <div className="bg-gray-800 rounded-lg p-6">
+            <div className="rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-3 text-yellow-400">
                 Backend
               </h3>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2">
                 <li>• C# - ASP.Net, Blazor</li>
                 <li>• Node.js 勉強中</li>
                 <li>• Python 勉強中</li>
@@ -53,11 +53,11 @@ export default function About() {
                 <li>• API 開発</li>
               </ul>
             </div>
-            <div className="bg-gray-800 rounded-lg p-6">
+            <div className="rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-3 text-purple-400">
                 Others
               </h3>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2">
                 <li>• Git / GitHub</li>
                 <li>• Azure DevOps</li>
                 <li>• Azure</li>
@@ -145,7 +145,7 @@ export default function About() {
           </h2>
           <div className="rounded-lg p-6">
             <p className="text-lg leading-relaxed mb-4">
-              技術的な相談や、プロジェクトのご提案などございましたら、お気軽にお声がけください。
+              こちらに他の作成物があります。
             </p>
             <div className="flex flex-wrap gap-4">
               <a
