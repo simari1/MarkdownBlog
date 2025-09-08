@@ -14,7 +14,7 @@ export default function About() {
           <h2 className="text-2xl font-semibold mb-6 text-blue-400">
             👨‍💻 自己紹介（仕事）
           </h2>
-          <div className="bg-gray-800 rounded-lg p-6 mb-6">
+          <div className="rounded-lg p-6 mb-6">
             <p className="text-lg leading-relaxed mb-4">
               はじめまして！simaと申します。現在、システムエンジニアとして活動しています。
             </p>
@@ -59,10 +59,10 @@ export default function About() {
               </h3>
               <ul className="space-y-2 text-gray-300">
                 <li>• Git / GitHub</li>
-                <li>• </li>
+                <li>• Azure DevOps</li>
                 <li>• Azure</li>
                 <li>• CI/CD</li>
-                <li>• Agile</li>
+                <li>• Agile / Scrum</li>
               </ul>
             </div>
           </div>
@@ -71,13 +71,13 @@ export default function About() {
         {/* 経験 */}
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-6 text-blue-400">💼 経験</h2>
-          <div className="bg-gray-800 rounded-lg p-6">
+          <div className="rounded-lg p-6">
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-semibold mb-2 text-green-400">
                   クラウド基盤構築
                 </h3>
-                <p className="text-gray-300">
+                <p className="">
                   Azureを使用したクラウド基盤構築の経験があります。 Azure
                   DevOpsを使用したCI/CDの実施や、Azure Functions、Azure App
                   Service、Azure
@@ -89,7 +89,7 @@ export default function About() {
                 <h3 className="text-lg font-semibold mb-2 text-yellow-400">
                   アプリ開発
                 </h3>
-                <p className="text-gray-300">
+                <p className="">
                   C#メインでのアプリ開発の経験があります。
                   Node.jsやPythonは個人で勉強しています。
                 </p>
@@ -98,7 +98,7 @@ export default function About() {
                 <h3 className="text-lg font-semibold mb-2 text-purple-400">
                   チーム開発
                 </h3>
-                <p className="text-gray-300">
+                <p className="">
                   Agile開発手法を用いたチーム開発の経験があります。
                   プラットフォームはAzure
                   DevOpsを利用してScrumで開発していました。
@@ -115,21 +115,21 @@ export default function About() {
             🎯 興味・関心
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gray-800 rounded-lg p-6">
+            <div className="rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-3 text-green-400">
                 🚀 セキュリティ
               </h3>
-              <p className="text-gray-300">
+              <p className="">
                 クラウド基盤を構築するときにいつもこれでいいのか？と自信を持てないことがあったため、セキュリティ周りを重点的に勉強しています。
                 特にMicrosoft Defender for
                 Cloudによるクラウド体制監視や運用監視について興味を持つようになりました。
               </p>
             </div>
-            <div className="bg-gray-800 rounded-lg p-6">
+            <div className="rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-3 text-yellow-400">
                 🤝 AIエージェント
               </h3>
-              <p className="text-gray-300">
+              <p className="">
                 今までずっと環境構築の複雑さからFrontend技術に苦手意識がありましたが、AIエディタの支援により少しずつ勉強しています。
                 現在はこのブログ作成を通して、とりあえずReactとNext.jsを個人で勉強しています。
                 AI Agentを利用したアプリ開発も今後学習していきたいと思います。
@@ -143,7 +143,7 @@ export default function About() {
           <h2 className="text-2xl font-semibold mb-6 text-blue-400">
             📧 連絡先
           </h2>
-          <div className="bg-gray-800 rounded-lg p-6">
+          <div className="rounded-lg p-6">
             <p className="text-lg leading-relaxed mb-4">
               技術的な相談や、プロジェクトのご提案などございましたら、お気軽にお声がけください。
             </p>
@@ -173,13 +173,13 @@ export default function About() {
           <h2 className="text-2xl font-semibold mb-6 text-blue-400">
             📝 このブログについて
           </h2>
-          <div className="bg-gray-800 rounded-lg p-6">
+          <div className="rounded-lg p-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-purple-400">
                   技術構成
                 </h3>
-                <ul className="space-y-2 text-gray-300">
+                <ul className="space-y-2">
                   <li>• Next.js (React)</li>
                   <li>• TypeScript</li>
                   <li>• Tailwind CSS</li>
@@ -191,7 +191,7 @@ export default function About() {
                 <h3 className="text-lg font-semibold mb-3 text-purple-400">
                   特徴
                 </h3>
-                <ul className="space-y-2 text-gray-300">
+                <ul className="space-y-2">
                   <li>• 静的サイト生成 (SSG)</li>
                   <li>• レスポンシブデザイン</li>
                   <li>• ダークテーマ</li>
