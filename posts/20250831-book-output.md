@@ -1,5 +1,6 @@
 ---
 title: "Output"
+author: 樺沢紫苑
 date: "2025-08-31"
 tags: ["読書感想文", "自己啓発"]
 summary: "精神科医の書いたアウトプット方法"
