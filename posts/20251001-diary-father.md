@@ -1,6 +1,5 @@
 ---
 title: "父について"
-author: -
 date: "2025-10-01"
 tags: ["日記"]
 summary: "父について"
